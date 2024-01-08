@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sugyani</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#interest">Interest</a></li>
+          <li><a href="#coding-profiles"></a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sugyani Patra</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#coding-profiles" onclick="toggleMenu()">Coding-Profile</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container c2">
+        <img src="./assets/adi1.jpg" alt="Sugyani profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sugyani Patra</h1>
+        <p ><span class="typedText"></span></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/logo-ig-png-insta.png"
+            alt="My Insta profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/25sugyani/?igsh=MzRlODBiNWFlZA%3D%3D'"
+          />
+          <img
+          src="./assets/twitter.png"
+          alt="My twitter profile"
+          class="icon"
+          onclick="location.href='https://twitter.com'"
+        />
+        <img
+        src="./assets/linkedin.png"
+        alt="My LinkedIn profile"
+        class="icon"
+        onclick="location.href='https:============================'"
+      />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https:==================='"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/adi21.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Fresher <br /> Social Research Analyst</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                <strong>B.A., Sociology (First Class Honors with Distinction(89%)</strong><br />
+                Autonomous College, Bhubaneswar
+              </p>
+              <span class="duration">2019 - 2022</span>
+              <p>
+                <strong>M.A. in Sociology
+                  
+                  2</strong><br />
+                Jawaharlal Nehru University, New Delhi
+              </p>
+              <span class="duration">2022 - Present</span>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a dedicated and passionate Master's in Sociology student,     I bring   with me a   profound   curiosity about the  intricate workings of society and a fervent desire to unravel   the  complexities that   shape human interactions. My academic journey has been   fueled by a commitment to understanding the   dynamics of social structures, examining the nuances of cultural phenomena, and exploring the profound impact of societal forces on individuals and communities.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- Add this block under the existing content -->
+<section id="skills">
+  <p class="section__text__p1">Skills</p>
+  <h1 class="title">Skills</h1>
+  <div class="skills-container">
+    <!-- Add individual skill items here -->
+    <div class="skill-item">
+      <h3>Critical thinking</h3>
+      <p> Qualitative research involves non-numeric data, often focusing on exploring social phenomena in-depth through methods such as interviews, observations, or content analysis </p>
+    </div>
+    <div class="skill-item">
+      <h3>Qualitative and Quantitative Research</h3>
+      <p>Sociology is inherently research-oriented. Students need to be adept at designing research projects, collecting and interpreting data, and drawing meaningful conclusions.</p>
+    </div>
+    <div class="skill-item">
+      <h3>Empathy and Cultural Competence</h3>
+      <p>Developing empathy and cultural competence allows sociology students to approach their work with sensitivity and respect</p>
+    </div>
+    <div class="skill-item">
+      <h3>Soft skills</h3>
+      <p>Effective Communication, Analytical Problem Solving, Adaptability to new Technologies, Team collaboration and Time management</p>
+    </div>
+    <div class="skill-item">
+      <h3>Language</h3>
+      <p>Hindi (Native), English (Professional),Sanskrit(Elementary)</p>
+    </div>
+  </div>
+  <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+</section>
+
+<section id="skills-chart">
+  <p class="section__text__p1">Skills</p>
+  <h1 class="title">Skills Radar Chart</h1>
+  <canvas id="skillsRadarChart" width="400" height="400"></canvas>
+</section>
+
+
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title"> “Education 
+              and health awareness among rural women</h2>
+            <div class="article-container">
+              <article>
+                
+                
+                  <p>A study in Sishupalgarh panchayat, Khordha 
+                    district”
+                    </p>
+               
+               
+              </article>
+             
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Depression in Indian Students</h2>
+            <div class="article-container">
+             
+                
+                
+              <article>
+              
+                  <p> Unveiling the 
+                    Truth Behind Popular Myths</p>
+               
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="Area of Interest">
+      <p class="section__text__p1">Browse My Interest</p>
+      <h1 class="title">Interest</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/railway.gif"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Women’s Studies</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:====================================================='"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:=============================================================='"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/billing.webp"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Animal Welfare and 
+              Environment Issues
+              </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:=============================================================='"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:==========================================================='"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/medi.webp"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title"> Feminist Theories</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:=========================================================='"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:==========================================================='"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="coding-profiles">
+      <p class="section__text__p1">Check Out My  Research Paper Presentation</p>
+      <h1 class="title">RESEARCH PAPER</h1>
+      <div class="experience-details-container">
+        <div class="about-containers color-container">
+          <!-- LeetCode -->
+          <div class="details-container coding-platform-container">
+            <h2 class="experience-sub-title  coding-title">“Indigenous Knowledge and Pedagogy: A Comparative Study of 
+              the Gurukul System and Contemporary Education”</h2>
+            <a href="https:===================================/" target="_blank">
+              
+            </a>
+            <div class="btn-container">
+            <!-- <button
+                class="btn btn-color-2 project-btn"
+'"
+              >
+                LeetCode
+              </button> -->
+          </div>
+          </div>
+    
+          <!-- GeeksforGeeks -->
+          <div class="details-container coding-platform-container">
+            <h2 class="experience-sub-title coding-title">“From Price Tags to Power 
+              Structures: Decoding the Pink Tax”</h2>
+           
+           
+          </div>
+
+          <div class="details-container coding-platform-container">
+            <h2 class="experience-sub-title coding-title">"A Means to Control Womens' Sexuality. TIJER – International 
+              Research Journal." </h2>
+          
+            <!-- <div class="btn-container">
+            <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/kaditya125/Railways_Management_System'"
+              >
+                gfg
+              </button>
+          </div> -->
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <a href="mailto:Sugyani176@gmail.com">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p>Sugyani176@gmail.com</p>
+          </a>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/icons8-location-64.png"
+            alt="Location icon"
+            class="icon contact-icon"
+          />
+          <a href="https://www.google.com/maps?q=Jawaharlal+Nehru+University,+New+Delhi">
+            <p>Jawaharlal Nehru University, New Delhi</p>
+          </a>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/icons8-phone-number-64.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <a href="tel:+919102202267">
+            <p>7894121370</p>
+          </a>
+        </div>
+        <div class="contact-info-container">
+          <a href="https://wa.me/+919102202267" target="_blank">
+            <img
+              src="./assets/whatsapp.svg"
+              alt="WhatsApp icon"
+              class="icon contact-icon"
+            />
+            <p>8280017240</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="profile">
+     
+    
+      <div id="coding-platforms">
+        <h2>Coding Platforms</h2>
+        <div class="coding-platform-container">
+          <a href="https://leetcode.com/your-leetcode-username" target="_blank">
+            <img src="./assets/leetcode-logo.png" alt="LeetCode Logo" class="coding-platform-logo" />
+            LeetCode
+          </a>
+        </div>
+        <div class="coding-platform-container">
+          <a href="https://auth.geeksforgeeks.org/user/your-gfg-username/practice/" target="_blank">
+            <img src="./assets/gfg-logo.png" alt="GeeksforGeeks Logo" class="coding-platform-logo" />
+            GeeksforGeeks
+          </a>
+        </div>
+        
+      </div>
+    </section> -->
+<!-- Add this code to your HTML -->
+<section id="feedback">
+  <p class="section__text__p1">Share Your Feedback</p>
+  <h1 class="title">Feedback</h1>
+  <div class="feedback-form-container">
+    <form id="feedbackForm" action="http://localhost:9000/submit-feedback" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Feedback:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit" class="btn btn-color-1">Submit Feedback</button>
+    </form>
+  </div>
+</section>
+
+
+    
+    
+
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Interest</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Sugyani Patra. All Rights Reserved.</p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var typingEffect = new Typed(".typedText", {
+          strings: ["Critical Thinker", " Statistical Analyser"],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 2000
+        });
+      });
+     
+
+      document.querySelector('.contact-icon').addEventListener('click', function() {
+         window.open('https://wa.me/1234567890'); // Replace with your actual WhatsApp number
+        });
+
+
+    </script>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  </body>
+</html>
